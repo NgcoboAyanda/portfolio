@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#542344;
+    --secondary-color: rgba(255, 190, 161, 1);
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    font-family: 'Tajawal', sans-serif;
+}
+
+
+//fonts
+    //tajawal font
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+    //red rose
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+
+    //merienda
+    @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
