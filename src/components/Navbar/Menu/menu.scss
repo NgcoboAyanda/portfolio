@@ -1,0 +1,27 @@
+.menu { 
+    height: 32px;
+    width: 52px;
+    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    span{
+        height:3px;
+        display: block;
+        background-color: var(--primary-color);
+        pointer-events: none;
+    }
+
+    span:not(.middle){
+        width: 100%;
+    }
+
+    .middle{
+        width: 60%;
+        align-self: flex-end;
+    }
+
+
+}

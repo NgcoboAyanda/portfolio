@@ -1,4 +1,10 @@
 .front-page{
     flex: 1;
     //background-color: red;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 255, 0)), 
+        url('../../images/pexels-justus-menke-5213836.jpg')
+        ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

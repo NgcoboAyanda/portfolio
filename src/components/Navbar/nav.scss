@@ -46,18 +46,17 @@
             }
             &:hover{
                 transform: scale(1.1);
+                text-decoration: underline;
 
                 a {
                     color: var(--secondary-color)
                 }
             }
         }
+
     }
 
-    &-menu{
-        display: flex;
-        background-color: green;
-
+    &-menu{     
         @media(min-width: 900px){
             display: none;
             background-color: red;

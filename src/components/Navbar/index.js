@@ -1,15 +1,15 @@
 import React,{Component} from 'react';
-//react router
-import {BrowserRouter as Router,Link} from 'react-router-dom';
+import {BrowserRouter as Router,Link} from 'react-router-dom'; //react-router
 
-import './nav.scss';
+import './nav.scss'; //nav bar styling
+import Menu from './Menu';
 
 class Nav extends Component {
 
     render(){
         return(
             <Router>
-                <nav className="navbar">
+                <nav className="navbar" >
                     <div className="logo">
                         <h2>
                             Ayanda...
@@ -33,7 +33,7 @@ class Nav extends Component {
                         </li>
                     </ul>
                     <div className="navbar-menu">
-                        menu bish
+                        <Menu/>
                     </div>
                 </nav>
             </Router>
