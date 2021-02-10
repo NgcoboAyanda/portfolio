@@ -1,0 +1,66 @@
+.navbar {
+    height: 80px;
+    z-index: 2;
+    display: flex;
+    //border: 1px solid green;
+    align-items: center;
+    padding: 0 3%;
+    justify-content: space-between;
+    box-shadow: 0 -10px 20px 5px rgba(0, 0, 0, 0.425);
+
+    .logo{
+        font-family: 'Merienda', cursive;
+        font-size: 1.4rem;
+        cursor: pointer;
+        
+
+        h2{
+            -webkit-text-stroke: 1px var(--primary-color);
+            -webkit-text-fill-color: white;
+        
+            &:hover{
+                -webkit-text-stroke: 1.2px var(--primary-color);
+            }
+        }
+    }
+
+    &-list{
+        //border: 1px solid red;
+        min-width: 30%;
+        display: none;
+        list-style: none;
+
+        @media (min-width:900px){
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-item{
+            font-size: 1.4rem;
+
+            a {
+                text-decoration: none;
+                color: black;
+                
+                
+            }
+            &:hover{
+                transform: scale(1.1);
+
+                a {
+                    color: var(--secondary-color)
+                }
+            }
+        }
+    }
+
+    &-menu{
+        display: flex;
+        background-color: green;
+
+        @media(min-width: 900px){
+            display: none;
+            background-color: red;
+        }
+    }
+}
