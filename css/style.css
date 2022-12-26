@@ -74,8 +74,8 @@
 }
 
 .heading_big{
-    font-size: 40px;
-    font-weight: var(--fw-normal);
+    font-size: 35px;
+    font-weight: var(--fw-big);
 }
 
 /* page styles */

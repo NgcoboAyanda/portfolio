@@ -118,6 +118,7 @@ section#about > div{
 
 .about__stack__plus-sign > div > svg {
     width: 40px;
+    fill: var(--color-primary);
 }
 
 .about__stack__django > div > svg{
@@ -127,6 +128,10 @@ section#about > div{
 @media all and (min-width: 800px){
     section#about{
         min-height: 600px;
+    }
+
+    .about__text{
+        margin-left: var(--space-bigger);
     }
 
     .about__text > div {
