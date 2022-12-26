@@ -118,6 +118,7 @@ section#about > div{
 
 .about__stack__plus-sign > div > svg {
     width: 40px;
+    fill: var(--color-primary);
 }
 
 .about__stack__django > div > svg{
