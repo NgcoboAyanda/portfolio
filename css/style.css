@@ -31,6 +31,9 @@
     --ff-default: 'Montserrat', sans-serif;
         /*font-color*/
     --fc-normal: rgb(55, 55, 55);
+        /*font-weight*/
+    --fw-normal: 500;
+    --fw-big: 600;
 
     /* colors */
     --color-primary: rgb(2, 123, 253);
@@ -71,7 +74,8 @@
 }
 
 .heading_big{
-    font-size: 50px;
+    font-size: 35px;
+    font-weight: var(--fw-big);
 }
 
 /* page styles */
@@ -107,6 +111,7 @@ body{
 @media all and (min-width: 800px){
     .heading_big{
         font-size: 60px;
+        font-weight: var(--fw-big);
     }
 
     #header{

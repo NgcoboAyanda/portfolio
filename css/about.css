@@ -11,10 +11,6 @@ section#about > div{
     width: 100%;
 }
 
-section#about > div > div:not(:first-child){
-    margin-left: var(--space-bigger);
-}
-
 .about__socials{
     display: flex;
     align-items: center;
