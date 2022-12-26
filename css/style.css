@@ -14,6 +14,7 @@
     --space-mid: 10px;
     --space-big: 15px;
     --space-bigger: 25px;
+    --space-extreme: 50px;
 
     /*fonts*/
         /*font-size*/
@@ -46,6 +47,13 @@
 
 .link_nav:not(.link_nav_selected):hover{
     border-bottom: 3px dotted var(--color-primary);
+}
+
+.link_btn{
+    background-color: var(--color-primary);
+    padding: var(--space-big) var(--space-bigger);
+    border-radius: 8px;
+    color: white;
 }
 
 .heading{
@@ -108,6 +116,11 @@ section#about > div > div:not(:first-child){
     margin-left: var(--space-bigger);
 }
 
+.about__socials{
+    display: flex;
+    align-items: center;
+}
+
 .about__socials > div {
     display: flex;
     flex-direction: column;
@@ -143,14 +156,39 @@ section#about > div > div:not(:first-child){
 }
 
 .about__text{
+    margin-top: var(--space-extreme);
+    display: flex;
+    justify-content: center;
     padding: 0 var(--space-big);
+}
+
+.about__text > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about__text__heading{
     max-width: 600px;
+    text-align: center;
+}
+
+.about__text__link{
+    margin-top: var(--space-extreme);
+}
+
+.about__content{
+    flex: 1;
+}
+
+.about__content > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about__stack{
+    margin-top: var(--space-extreme);
     flex: 1;
     display: flex;
     justify-content: center;
