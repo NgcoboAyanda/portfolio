@@ -65,7 +65,7 @@
 }
 
 .heading_big{
-    font-size: 60px;
+    font-size: 50px;
 }
 
 /* page styles */
@@ -217,7 +217,23 @@ section#about > div > div:not(:first-child){
     }
 }
 
+.about__stack__react > div > svg {
+    width: 100px;
+}
+
+.about__stack__plus-sign > div > svg {
+    width: 40px;
+}
+
+.about__stack__django > div > svg{
+    width: 200px;
+}
+
 @media all and (min-width: 800px){
+    .heading_big{
+        font-size: 60px;
+    }
+
     #header{
         display: block;
     }
