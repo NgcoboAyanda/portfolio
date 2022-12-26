@@ -129,6 +129,10 @@ section#about > div{
         min-height: 600px;
     }
 
+    .about__text{
+        margin-left: var(--space-bigger);
+    }
+
     .about__text > div {
         align-items: flex-start;
     }
