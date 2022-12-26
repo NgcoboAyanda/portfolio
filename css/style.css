@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* section styles */
+@import url('./about.css');
+@import url('./skills.css');
+@import url('./projects.css');
+@import url('./contact.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root{
+    /* variables */
+    /* margins, paddings */
+    --space-small: 5px;
+    --space-mid: 10px;
+    --space-big: 15px;
+    --space-bigger: 25px;
+    --space-extreme: 50px;
+
+    /*fonts*/
+        /*font-size*/
+    --fs-normal: 22px;
+    --fs-big: 25px;
+    --fs-biggest: 30px;
+        /*font-family*/
+    --ff-default: 'Montserrat', sans-serif;
+        /*font-color*/
+    --fc-normal: rgb(55, 55, 55);
+
+    /* colors */
+    --color-primary: rgb(2, 123, 253);
+
+}
+
+/* default styles */
+.link{
+    text-decoration: none;
+}
+
+.link_nav{
+    color: var(--fc-normal);
+    padding: var(--space-small) 0;
+}
+
+.link_nav_selected{
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.link_nav:not(.link_nav_selected):hover{
+    border-bottom: 3px dotted var(--color-primary);
+}
+
+.link_btn{
+    background-color: var(--color-primary);
+    padding: var(--space-big) var(--space-bigger);
+    border-radius: 8px;
+    color: white;
+}
+
+.heading{
+    color: var(--fc-normal);
+}
+
+.heading > .colored {
+    color: var(--color-primary);
+}
+
+.heading_big{
+    font-size: 50px;
+}
+
+/* page styles */
+body{
+    font-size: var(--fs-normal);
+    font-family: var(--ff-default);
+}
+
+#header{
+    display: none;
+    padding: var(--space-big) var(--space-bigger);
+}
+
+.header__nav__links > div > ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.header__nav__links > div > ul > li {
+    font-size: var(--fs-normal);
+    font-weight: 400;
+}
+
+.header__nav__links > div > ul > li:not(:first-child){
+    margin-left: var(--space-bigger);
+}
+
+.header__nav__links__item__link > .link-number{
+    color: var(--color-primary);
+}
+
+@media all and (min-width: 800px){
+    .heading_big{
+        font-size: 60px;
+    }
+
+    #header{
+        display: block;
+    }
+}
+
