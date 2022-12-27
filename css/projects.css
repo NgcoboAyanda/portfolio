@@ -32,8 +32,9 @@ section#projects > div {
 .section__content__gallery__project{
     color: rgb(54, 54, 54);
     border-radius: 10px;
-    padding: var(--space-extreme) var(--space-bigger);
+    padding: var(--space-bigger) var(--space-big);
     box-shadow: 0 0 20px 5px rgb(228, 228, 228);
+    max-width: 500px;
 }
 
 .section__content__gallery__project > div {
@@ -63,6 +64,22 @@ section#projects > div {
     margin-top: var(--space-big);
 }
 
+.section__content__gallery__project__tech > div {
+    display: flex;
+}
+
+.section__content__gallery__project__tech__item{
+    font-size: var(--fs-smaller);
+    background-color: rgb(225, 225, 225);
+    border-radius: 30px;
+    padding: 10px 14px;
+    font-weight: var(--fw-normal);
+}
+
+.section__content__gallery__project__tech__item:not(:first-child){
+    margin-left: 4px;
+}
+
 @media all and (min-width: 800px){  
     .section__heading > div > p {
         margin-top: var(--space-bigger);
@@ -71,6 +88,10 @@ section#projects > div {
 
     .section__content{
         margin-top: var(--space-bigger);
+    }
+
+    .section__content__gallery__project{
+        padding: var(--space-extreme) var(--space-bigger);
     }
 
     .section__closing-tag{

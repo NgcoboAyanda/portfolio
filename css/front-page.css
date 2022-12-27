@@ -1,11 +1,15 @@
-section#front-page{
+#front-page{
     min-height: 700px;
     /* border: 1px solid purple; */
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 0 var(--space-big);
 }
 
-section#front-page > div{
+#front-page > div{
+    height: 100%;
+    max-width: 1200px;
     display: flex;
     width: 100%;
 }
@@ -54,6 +58,7 @@ section#front-page > div{
     display: flex;
     justify-content: center;
     padding: 0 var(--space-big);
+    overflow: hidden;
 }
 
 .front-page__text > div {
@@ -71,6 +76,10 @@ section#front-page > div{
     margin-top: var(--space-extreme);
 }
 
+.front-page__text__link > div > a {
+    display: block;
+}
+
 .front-page__content{
     flex: 1;
 }
@@ -85,7 +94,8 @@ section#front-page > div{
     margin-top: var(--space-extreme);
     flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .front-page__stack > div {
@@ -95,7 +105,9 @@ section#front-page > div{
 }
 
 .front-page__stack__plus-sign{
-    margin-top: var(--space-bigger);
+    margin-top: var(--space-big);
+    display: flex;
+    align-items: center;
 }
 
 .front-page__stack__react{
@@ -116,8 +128,9 @@ section#front-page > div{
 }
 
 .front-page__stack__plus-sign > div > svg {
-    width: 40px;
+    width: 20px;
     fill: var(--color-primary);
+    margin: 0 var(--space-mid);
 }
 
 .front-page__stack__django > div > svg{
@@ -145,15 +158,22 @@ section#front-page > div{
         flex-direction: row;
     }
 
+    .front-page__stack{
+        margin-top: var(--space-extreme);
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .front-page__stack__react > div > svg {
-        width: 200px;
+        width: 150px;
     }
     
     .front-page__stack__plus-sign > div > svg {
-        width: 60px;
+        width: 40px;
     }
     
     .front-page__stack__django > div > svg{
-        width: 350px;
+        width: 320px;
     }
 }
