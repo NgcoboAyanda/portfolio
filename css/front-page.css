@@ -8,6 +8,7 @@
 }
 
 #front-page > div{
+    height: 100%;
     max-width: 1200px;
     display: flex;
     width: 100%;
@@ -57,6 +58,7 @@
     display: flex;
     justify-content: center;
     padding: 0 var(--space-big);
+    overflow: hidden;
 }
 
 .front-page__text > div {
@@ -74,6 +76,10 @@
     margin-top: var(--space-extreme);
 }
 
+.front-page__text__link > div > a {
+    display: block;
+}
+
 .front-page__content{
     flex: 1;
 }
@@ -88,15 +94,18 @@
     margin-top: var(--space-extreme);
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
 }
 
 .front-page__stack > div {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .front-page__stack__plus-sign{
+    margin-top: var(--space-big);
     display: flex;
     align-items: center;
 }
@@ -147,6 +156,13 @@
 
     .front-page__content > div {
         flex-direction: row;
+    }
+
+    .front-page__stack{
+        margin-top: var(--space-extreme);
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .front-page__stack__react > div > svg {
