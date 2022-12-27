@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600&display=swap');
 
 /* section styles */
-@import url('./about.css');
+@import url('./front-page.css');
 @import url('./skills.css');
 @import url('./projects.css');
 @import url('./contact.css');
@@ -30,6 +30,7 @@
         /*font-family*/
     --ff-default: 'Montserrat', sans-serif;
         /*font-color*/
+    --fc-light: rgb(136, 136, 136);
     --fc-normal: rgb(55, 55, 55);
         /*font-weight*/
     --fw-normal: 500;
@@ -73,9 +74,28 @@
     color: var(--color-primary);
 }
 
+.heading_mid{
+    font-size: 35px;
+    font-weight: var(--fw-big);
+}
+
 .heading_big{
     font-size: 35px;
     font-weight: var(--fw-big);
+}
+
+.paragraph{
+    font-size: var(--fs-big);
+    font-weight: var(--fw-normal);
+    line-height: 40px;
+}
+
+.paragraph:not(:first-child){
+    margin-top: var(--space-big);
+}
+
+.paragraph_small{
+    font-size: var(--fs-normal);
 }
 
 /* page styles */
@@ -86,7 +106,12 @@ body{
 
 #header{
     display: none;
+    justify-content: center;
     padding: var(--space-big) var(--space-bigger);
+}
+
+#header > div{
+    max-width: 1700px;
 }
 
 .header__nav__links > div > ul {
@@ -108,14 +133,49 @@ body{
     color: var(--color-primary);
 }
 
+.section{
+    display: flex;
+    justify-content: center;
+    padding: 0 var(--space-big);
+}
+
+.section:not(:first-child){
+    margin-top: var(--space-extreme);
+}
+
+.section:not(:first-child) > div {
+    padding: 0 var(--space-bigger);
+}
+
+.section > div {
+    width: 100%;
+    max-width: 1500px;
+}
+
+.section__closing-tag > div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section__closing-tag__element{
+    font-size: var(--fs-big);
+}
+
 @media all and (min-width: 800px){
+    .heading_mid{
+        font-size: 40px;
+    }
+
     .heading_big{
         font-size: 60px;
-        font-weight: var(--fw-big);
     }
 
     #header{
         display: block;
+    }
+
+    .section__closing-tag__element{
+        font-size: var(--fs-biggest);
     }
 }
 
