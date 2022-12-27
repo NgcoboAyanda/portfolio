@@ -32,8 +32,8 @@ section#front-page > div{
 .front-page__socials__links > li > a {
     display: flex;
     color: var(--color-primary);
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
 }
 
 .front-page__socials__links > li > a > svg {
