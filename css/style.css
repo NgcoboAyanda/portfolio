@@ -62,10 +62,21 @@
 }
 
 .link_btn{
-    background-color: var(--color-primary);
     padding: var(--space-big) var(--space-bigger);
     border-radius: 8px;
+    
+}
+
+.link_btn-filled{
+    background-color: var(--color-primary);
     color: white;
+}
+
+.link_btn-unfilled{
+    display: block;
+    color: var(--color-primary);
+    border: 1px solid currentColor;
+    width: 100%;
 }
 
 .heading{

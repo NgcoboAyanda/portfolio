@@ -29,6 +29,13 @@ section#projects > div {
     margin-top: var(--space-extreme);
 }
 
+.section__content__gallery > div {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    grid-gap: var(--space-big);
+}
+
 .section__content__gallery__project{
     color: rgb(54, 54, 54);
     border-radius: 10px;
@@ -58,6 +65,7 @@ section#projects > div {
 
 .section__content__gallery__project__description{
     margin-top: var(--space-big);
+    height: 150px;
 }
 
 .section__content__gallery__project__tech{
@@ -65,7 +73,9 @@ section#projects > div {
 }
 
 .section__content__gallery__project__tech > div {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(80px, 1fr) );
+    grid-gap: var(--space-small) 0;
 }
 
 .section__content__gallery__project__tech__item{
@@ -74,10 +84,18 @@ section#projects > div {
     border-radius: 30px;
     padding: 10px 14px;
     font-weight: var(--fw-normal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section__content__gallery__project__tech__item:not(:first-child){
     margin-left: 4px;
+}
+
+.section__content__gallery__project__link{
+    margin-top: var(--space-bigger);
+    font-size: var(--fs-small);
 }
 
 @media all and (min-width: 800px){  
