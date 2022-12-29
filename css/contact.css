@@ -1,0 +1,7 @@
+.section__content__contact__methods{
+    margin-top: var(--space-bigger);
+}
+
+.contact__method:not(:first-child){
+    margin-top: var(--space-big);
+}
