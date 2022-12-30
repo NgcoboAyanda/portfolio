@@ -43,6 +43,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* default styles */
 .link{
     text-decoration: none;
