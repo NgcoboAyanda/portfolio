@@ -74,7 +74,7 @@ section#projects > div {
 
 .section__content__gallery__project__tech > div {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(80px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(80px, 80px) );
     grid-gap: var(--space-small) 0;
 }
 
