@@ -106,7 +106,7 @@ html{
 .paragraph{
     font-size: var(--fs-normal);
     font-weight: var(--fw-normal);
-    line-height: 40px;
+    line-height: 55px;
 }
 
 .paragraph:not(:first-child){
